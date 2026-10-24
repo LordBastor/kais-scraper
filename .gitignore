@@ -1,0 +1,13 @@
+# scraped data and outputs
+data/
+# session files contain live cookies and CSRF tokens
+*.curl
+session*.txt
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+#
+env
+env/*

@@ -1,0 +1,20 @@
+[project]
+name = "kais-scraper"
+version = "0.1.0"
+description = "Incremental scraper and converter for the Bulgarian cadastre (KAIS) open data portal"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[project.scripts]
+kais-scraper = "kais_scraper.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["kais_scraper"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
